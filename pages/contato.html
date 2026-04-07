@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - TripWay</title>
+</head>
+<body>
+    <header>
+        <h1>Contato e Reserva</h1>
+        <p>Preencha o formulário para fazer sua reserva</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Solicite sua reserva</h2>
+            <img src="../images/contato.jpg" alt="Pessoa fazendo reserva no computador" width="500">
+            <p>Preencha os campos abaixo e nossa equipe vai entrar em contato em até 24 horas.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="destino">Destino de interesse:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">-- Escolha um destino --</option>
+                        <option value="porto-de-galinhas">Porto de Galinhas</option>
+                        <option value="campos-do-jordao">Campos do Jordão</option>
+                        <option value="lisboa">Lisboa</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="data">Data da viagem:</label>
+                    <input type="date" id="data" name="data" required>
+                </p>
+
+                <p>
+                    <label for="pessoas">Quantidade de pessoas:</label>
+                    <input type="number" id="pessoas" name="pessoas" min="1" required>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <input type="text" id="mensagem" name="mensagem">
+                </p>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>TripWay &copy; 2026 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
